@@ -17,3 +17,8 @@ def info():
    aula = 1 
 
    return f"<h1>Módulo: {modulo} — Aula {aula}<h1>"
+
+@app.get("/bemvindo/<usuario>") 
+
+def bemvindo(usuario):
+   return f"<h1>Bem-vindo, {usuario.capitalize()}!<h1>"
