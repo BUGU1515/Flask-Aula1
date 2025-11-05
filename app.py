@@ -7,3 +7,13 @@ app = Flask(__name__)
 def index():
 
      return "Olá, Mundo !"
+
+@app.get("/info") 
+
+def info(): 
+
+   modulo = "Flask" 
+
+   aula = 1 
+
+   return f"<h1>Módulo: {modulo} — Aula {aula}<h1>"
